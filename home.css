@@ -1,0 +1,272 @@
+/* General Body Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  min-height: 100vh;
+}
+
+/* Home Container */
+.home-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px; /* Increased for larger layouts */
+}
+.add-container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px; /* Increased for larger layouts */
+}
+
+/* Title Styling */
+.title {
+  font-size: 2rem;
+  color: #1d3557;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 3px solid #457b9d;
+  padding-bottom: 10px;
+}
+
+/* Logout Button Fixed */
+.logout-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays above other elements */
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #a83232;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+  background-color: #1d3557;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Type Title */
+.type-title {
+  font-size: 1.8rem;
+  color: #1d3557;
+  margin-top: 30px;
+  text-align: left;
+  text-transform: capitalize;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 5px;
+}
+
+/* Table Container */
+.table-container {
+  margin-top: 20px;
+  max-height: 400px; /* Ensures tables don't grow too tall */
+  overflow-y: auto; /* Adds vertical scroll for long tables */
+}
+
+/* User Table */
+.user-table {
+  width: 100%;
+  table-layout: fixed; /* Equal column widths */
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+  font-size: 1rem;
+  word-wrap: break-word; /* Wraps long content */
+}
+
+.user-table th {
+  background-color: #1d3557;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.user-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Buttons */
+.edit-button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #1d3557;
+}
+
+.delete-button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #a83232;
+}
+
+/* Search Container */
+.search-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.search-container form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 70%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #1d3557;
+}
+
+.search-results-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.search-results-table th,
+.search-results-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.search-results-table th {
+  background-color: #1d3557;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.search-results-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.search-results-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-container,
+  .search-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .user-table th,
+  .user-table td,
+  .search-results-table th,
+  .search-results-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .edit-button,
+  .logout-button,
+  .search-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
