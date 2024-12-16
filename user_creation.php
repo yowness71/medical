@@ -127,8 +127,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div id="speciality-field" style="display: none;">
-                    <label for="speciality">Speciality:</label>
-                    <input type="text" id="speciality" name="speciality" placeholder="Enter your speciality">
+                      <label for="speciality">Speciality:</label>
+                <select id="speciality" name="speciality"  required>
+                  <option value="">--Select--</option>
+                  <option value="Cardiology" <?= isset($_POST['speciality']) && $_POST['speciality'] === 'Cardiology' ? 'selected' : '' ?>>Cardiology</option>
+                  <option value="Dermatology" <?= isset($_POST['speciality']) && $_POST['speciality'] === 'Dermatology' ? 'selected' : '' ?>>Dermatology</option>
+                  <option value="Pediatrics" <?= isset($_POST['speciality']) && $_POST['speciality'] === 'Pediatrics' ? 'selected' : '' ?>>Pediatrics</option>
+                  <!-- Add more specialties -->
+                </select>
                 </div>
 
                 <label for="password">Password:</label>
