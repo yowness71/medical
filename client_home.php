@@ -36,11 +36,11 @@ $user_last_name = $_SESSION['last_name'];
     
     <div class="home-container" id="home-container">
         <!-- Iframe to load the "Book Appointment" page -->
-        <iframe src="book_appointment.php" width="100%" height="600px" frameborder="0" title="Book Appointment"></iframe>
+        <iframe src="book_appointment.php" width="100%" height="575px" frameborder="0" title="Book Appointment"></iframe>
     </div>
  
   <div class="appointments-container" id="appointments-container" style="display: none;" >
-    <p>appointments</p>
+    <?php include('appointments_client.php'); ?>
   </div>
   <div class="contact-container" id="contact-container" style="display: none;">
     
